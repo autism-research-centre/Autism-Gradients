@@ -5,6 +5,7 @@ dependencies:
   - scikit-learn
   - numpy
   - scipy
+  - matplotlip
   - pip:
     - git+git://github.com/janfreyberg/pySTATIS
     - git+git://github.com/janfreyberg/mapalign
