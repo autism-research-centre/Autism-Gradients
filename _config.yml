@@ -21,7 +21,7 @@ permalink: /blog/:year/:month/:day/:title
 #permalink: pretty
 paginate: 3
 paginate_path: posts/page:num
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json"]
 excerpt_separator: <!--more-->
 
 gems: [jekyll-paginate, jekyll-feed]
