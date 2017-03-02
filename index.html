@@ -1,15 +1,22 @@
 ---
 layout: page
-description: "Owen Parsons - Psychiatry Researcher"
+description: "Autism Gradients - A BrainHack Global Project"
 ---
-<p>I am currently working towards a PhD in Psychiatry at the University of Cambridge. My project focuses on the roles of expectation and uncertainty affect perceptual decision making in individuals with autism spectrum conditions. You can find out a bit more about my research by going to my projects pages.</p>
+## Autism gradients of hierarchical organization
 
-<p>I'm also very interested in science communication and the use of scientific research in policy. I'm the editor for my department's news site which can be found here. I also work on a science-policy podcast for the Cambridge University Science and Policy Exchange (CUSPE) which can be found here.</p>
+#### Brainhack project on exploring the use of connectivity gradients to study cortical hierarchies in autism
 
-<p>I write the occasional blog post about things such as autism research, autism policy, neuroscience, statistics and data science. You can find a full list of posts here or can see my latest posts directly under this.</p>
+#### Rationale
+Most of the theoretical foundations on the use of gradient can be found [here] (http://www.pnas.org/content/113/44/12574) 
+
+In short, Margulies et al. show how the primary connectivity gradient very closely resembles the topology of the default mode network and that there appears to be some hierarchy in this gradient that follows the hierarchy of complexity in cognitive processing (ranging from low-level sensory processing to higher order cognition).
+
+In Autism research there are numerous theories regarding alterations in functional connectivity. Ranging from a global theory suggesting short-range over connectivity and long-range underconnectivity (Belmonte et al. 2004) and more specific examples of specific connection mainly in anterior-posterior connections (Courchesne et al.). From a more cognitive perspective it might be interesting to see if some of this is also represented in some for of disruption in cortical hierarchy. If for example individuals with autism have a strong talent for very detailed functions, but possibly less capacity to intergrate information from different sources/modalities one could hypothesize that the cortical hierarchy might be disrupted.
+
+Thus, in the present project we would like to investigate these cortical hierarchy by looking at the steepness of the connectivity gradient. 
 
 <hr>
-<h2>Latest post:</h2>
+<h2>If you want to keep up to date with the projects progress head to our updates page or you can see the latest update on the project below:</h2>
 
 <div class="blog-index">  
   <p>
@@ -21,10 +28,26 @@ description: "Owen Parsons - Psychiatry Researcher"
 <hr>
 
 
+---
 
+### Get set up
+Make sure you have anaconda or miniconda installed:
+https://conda.io/miniconda.html
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+(You should also have git installed)
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+Clone this repository:
+`git clone https://github.com/rb643/Autism-Gradients`
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
+Create a conda environment from the environment.yml file (you have to be inside the repo folder):
+`conda env create -n rbbrainhack -f environment.yml`
+You should then activate this environment:
+`source activate rbbrainhack`
+
+download and unpack cluster_roi - n.b. this is for macs, on windows doing it manually should work too:
+```
+curl -LOk "https://github.com/ccraddock/cluster_roi/archive/v1.0.0.zip"
+unzip v1.0.0
+mv cluster_roi-1.0.0/ cluster_roi/
+rm v1.0.0.zip 
+```
