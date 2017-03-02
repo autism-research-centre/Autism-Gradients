@@ -1,7 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8" />
-<title>Gradients</title>
+---
+layout: page
+title: "Gradients"
+description: "Have questions? I have answers (maybe)."
+header-img: "img/contact-bg.jpg"
+---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -130,14 +132,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -345,8 +347,8 @@ div#notebook {
     <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;./data/Outputs/Embs/&quot;</span><span class="o">+</span><span class="n">savename</span><span class="o">+</span><span class="s2">&quot;_embedding_dense_res.npy&quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
 
     <span class="n">X</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;vectors&#39;</span><span class="p">]</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="o">/</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">T</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>    
-    
+    <span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="o">/</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">T</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
+
     <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;./data/Outputs/Embs/&quot;</span><span class="o">+</span><span class="n">savename</span><span class="o">+</span><span class="s2">&quot;_embedding_dense_res_veconly.npy&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span> <span class="c1">#store vectors only</span>
 </pre></div>
 
@@ -2144,7 +2146,7 @@ gBE6DQAAwAidBgAAYIROAwAAMPL/ikQtGdFcFCkAAAAASUVORK5CYII=
         <span class="n">x</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">grdnt</span><span class="p">[:,</span><span class="n">ii</span><span class="p">])</span> <span class="c1"># just sort in ascending order?</span>
         <span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
         <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span>
-        
+
     <span class="n">grdnt_slope</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
 <span class="n">grdnt_slope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">grdnt_slope</span><span class="p">)</span>
 <span class="c1"># make it into a dataframe</span>
@@ -2190,7 +2192,7 @@ gBE6DQAAwAidBgAAYIROAwAAMPL/ikQtGdFcFCkAAAAASUVORK5CYII=
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:2: SettingWithCopyWarning: 
+<pre>/anaconda/lib/python2.7/site-packages/ipykernel/__main__.py:2: SettingWithCopyWarning:
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -2223,13 +2225,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">## numpy is used for creating fake data</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> 
-<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="kn">as</span> <span class="nn">mpl</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="kn">as</span> <span class="nn">mpl</span>
 
 <span class="c1">## agg backend is used to create plot as a .png file</span>
 <span class="n">mpl</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;agg&#39;</span><span class="p">)</span>
 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DX_GROUP&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">])</span>
 <span class="n">ASC</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;DX_GROUP&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span>
 <span class="n">NT</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;DX_GROUP&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
@@ -2582,9 +2584,9 @@ mVni/j9k8xAgE9hFJAAAAABJRU5ErkJggg==
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="c1"># this cell in only necessary for plotting below</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="kn">as</span> <span class="nn">plt</span> 
-<span class="kn">import</span> <span class="nn">nilearn</span> 
-<span class="kn">import</span> <span class="nn">nilearn.plotting</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">nilearn</span>
+<span class="kn">import</span> <span class="nn">nilearn.plotting</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">nibabel</span> <span class="kn">as</span> <span class="nn">nib</span>
@@ -2592,7 +2594,7 @@ mVni/j9k8xAgE9hFJAAAAABJRU5ErkJggg==
 <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">isfile</span><span class="p">,</span> <span class="n">join</span>
 
 <span class="k">def</span> <span class="nf">rebuild_nii</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    
+
     <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;Mean_Vec.npy&#39;</span><span class="p">)</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="n">num</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">nim</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;cc400_roi_atlas.nii&#39;</span><span class="p">)</span>
@@ -2611,7 +2613,7 @@ mVni/j9k8xAgE9hFJAAAAABJRU5ErkJggg==
     <span class="n">nilearn</span><span class="o">.</span><span class="n">plotting</span><span class="o">.</span><span class="n">plot_epi</span><span class="p">(</span><span class="n">nim_out</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">rebuild_nii_individ</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    
+
     <span class="n">onlyfiles</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">listdir_nohidden</span><span class="p">(</span><span class="s1">&#39;./data/Outputs/Regs/&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">isfile</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;./data/Outputs/Regs/&#39;</span><span class="p">,</span> <span class="n">f</span><span class="p">))]</span>
 
     <span class="k">for</span> <span class="n">sub</span> <span class="ow">in</span> <span class="n">onlyfiles</span><span class="p">:</span>
@@ -25591,7 +25593,7 @@ HCC1uhA5AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span>
 </pre></div>
 
 </div>
