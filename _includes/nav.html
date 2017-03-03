@@ -62,9 +62,15 @@
 	<a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }} - Test2<i class="fa fa-angle-down"></i></a>    
 	{% endif %}    
 	    <ul class="dropdown-menu">
+{% if dale.title == 'Test' %}		    
     {% for subcategory in dale.subcategories %}
     <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
     {% endfor %}
+{% else %}		    
+{% for post in site.posts %}
+<li><a href="{{ site.url }}{{ subcategory.subhref }}"> {{ post.title }} </a></li>
+{% endfor %}
+		    {% endif %}  
     </ul>
     {% else %}
 
