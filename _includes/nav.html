@@ -32,7 +32,13 @@
 				{% endif %}
 		    
 		    {% if url_parts[1] == 'posts' %}
-		    <li class="active" ><a href="/posts/">Testing</a></li>
+		    <li><a href="posts">Testing</a></li>
+		       
+		    
+			{% endif %}
+		    
+		    {% if page.url == '/posts/' %}
+		    <li><a href="/posts/">Testing 2</a></li>
 		       
 		    
 			{% endif %}
