@@ -60,10 +60,12 @@
     <ul class="dropdown-menu">
 	
 	    {% if dale.title == "Test" %}
-	    
-	  {% for post in paginator.posts %}
+	    {% for subcategory in dale.subcategories %}
+    <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+    {% endfor %}
+	  <!--{% for post in paginator.posts %}
 	   <li> <h1><a href="{{ post.url }}">{{ post.title }}</a></h1></li>
-{% endfor %
+{% endfor % -->
 	    
 	 {% endif %}  
    <!-- {% for subcategory in dale.subcategories %}
