@@ -1,5 +1,6 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<!-- <nav class="navbar navbar-default navbar-custom navbar-fixed-top"> -->
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -16,9 +17,9 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
+               <!-- <li>
                     <a href="{{ site.baseurl }}/">Home - Edit</a>
                 </li>
 		    
@@ -49,7 +50,26 @@
 		    
 			{% endif %}
 			    
-                {% endif %}{% endfor %}
+                {% endif %}{% endfor %} -->
+		    {% for dale in site.data.nav %}
+
+    <!-- check to see if the data file has a submenu, and if so display it -->
+    {% if dale.subcategories != null %}
+    <li class="dropdown">
+    <a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }}<i class="fa fa-angle-down"></i></a>
+    <ul class="dropdown-menu">
+    {% for subcategory in dale.subcategories %}
+    <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+    {% endfor %}
+    </ul>
+    {% else %}
+
+    <!— display the top level navigation for items that don’t have a submenu -->
+    <li>
+    <a href="{{ site.url }}{{ dale.href }}">{{ dale.title }}</a>
+    {% endif %}
+    </li>
+    {% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
