@@ -59,7 +59,7 @@
     <a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }}<i class="fa fa-angle-down"></i></a>
     <ul class="dropdown-menu">
 	
-	    {% if dale.title = "Test" %}
+	    {% if dale.title == "Test" %}
 	    
 	  {% for post in paginator.posts %}
 	   <li> <h1><a href="{{ post.url }}">{{ post.title }}</a></h1></li>
