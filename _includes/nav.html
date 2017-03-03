@@ -67,9 +67,8 @@
     <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
     {% endfor %}
 {% else %}		    
-<!-- {% for post in site.posts %} -->
-		    {% for update in site.categories.updates %}
-<li><a href="{{ site.url }}{{ subcategory.subhref }}"> {{ update.title }} </a></li>
+{% for update in categories.updates %}
+<li><a href="/"> {{ update.title }} </a></li>
 {% endfor %}
 		    {% endif %}  
     </ul>
