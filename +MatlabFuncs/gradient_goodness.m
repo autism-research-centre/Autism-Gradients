@@ -15,8 +15,8 @@ compcontinuous = read_avw(component);
 
 [gradmap] = read_avw(gradfile);
 
-inside = abs(mean2(reshape(gradmap(bgmask & compmap), numel(gradmap(bgmask & compmap)), 1))/100);
-outside = abs(mean2(reshape(gradmap(bgmask & ~compmap), numel(gradmap(bgmask & ~compmap)), 1))/100);
+inside = abs(nanmean(reshape(gradmap(bgmask & compmap), numel(gradmap(bgmask & compmap)), 1))/100);
+outside = abs(nanmean(reshape(gradmap(bgmask & ~compmap), numel(gradmap(bgmask & ~compmap)), 1))/100);
 
 
 % Calculate the ratio between the two

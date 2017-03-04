@@ -198,9 +198,9 @@ write_image_string = 'y';
 
 if write_image_string == 'y',
   
-  outfolder = fileparts(target_file_name);
+  outfolder = fileparts(object_file_name);
   [~, outfile] = fileparts(object_file_name);
-  new_name = fullfile(pwd, [outfile, 'transformed.nii']);
+  new_name = fullfile(outfolder, [outfile, 'transformed.nii']);
   
   Vnew = V_target;
   Vnew.fname = new_name;
