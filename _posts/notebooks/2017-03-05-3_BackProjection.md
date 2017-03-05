@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 3 - Back projection"
+subtitle:   "iPython notebook to backproject individual embeddings from the grouped output in Step 2"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## Step 3 - Back project the embeddings to individuals
 

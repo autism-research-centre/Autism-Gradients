@@ -1,5 +1,14 @@
+---
+layout:     post
+title:      "Step 5b - Visualizing gradient slopes"
+subtitle:   "iPython notebook to visualize gradient slopes created in 5a"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
-## Step 5B - Visualizing gradient slopes
+## Step 5b - Visualizing gradient slopes
 
 #####  written by R.A.I. Bethlehem & B. Soergel for the Autism Gradients project at Brainhack Cambridge 2017
 

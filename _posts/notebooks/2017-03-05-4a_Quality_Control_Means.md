@@ -1,5 +1,14 @@
+---
+layout:     post
+title:      "Step 4a - Mean Gradients "
+subtitle:   "iPython notebook to visualize the mean gradients"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
-## Step 4A - Visualize the mean gradients
+## Step 4a - Visualize the mean gradients
 
 #### Interactive visualisation for MRI plots
 

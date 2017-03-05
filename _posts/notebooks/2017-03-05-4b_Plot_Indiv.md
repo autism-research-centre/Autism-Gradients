@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 4b - Storing Nifti"
+subtitle:   "iPython notebook to store individual gradient maps as Nifti"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## Step 4b - Visualize the individual gradients
 

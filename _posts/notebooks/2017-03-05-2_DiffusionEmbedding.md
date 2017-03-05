@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 2 - Diffusion Embedding"
+subtitle:   "iPython notebook to run the diffusion embedding"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## Step 2 - Run the diffusion embedding on selected files
 

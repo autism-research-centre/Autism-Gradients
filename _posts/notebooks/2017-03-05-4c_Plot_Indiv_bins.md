@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 4c - Gradient Binning"
+subtitle:   "iPython notebook to bin gradient in different percentiles and store as Nifti"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## Step 4c - Visualize the binned gradients
 

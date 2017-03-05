@@ -1,5 +1,14 @@
+---
+layout:     post
+title:      "Step 5a - Estimating gradient slopes"
+subtitle:   "iPython notebook used to estimate the gradient slopes"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
-## Step 5A - Estimating gradient slopes
+## Step 5a - Estimating gradient slopes
 
 #####  written by R.A.I. Bethlehem & B. Soergel for the Autism Gradients project at Brainhack Cambridge 2017
 
