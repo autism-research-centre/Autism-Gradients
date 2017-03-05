@@ -2,12 +2,12 @@
   href: ""
 
 - title: "Updates"
-  href: "/Testing/"
+  href: "/updates.html"
   dropdown: "Yes"
 
       
 - title: "Notebooks"
-  href: "/Testing/"
+  href: "/notebooks.html"
   dropdown: "Yes"
       
 - title: "Contributors"
@@ -15,11 +15,21 @@
   dropdown: "Yes"
   subcategories:
     - subtitle: "Richard Bethlehem"
-      subhref: "/learn1/"
-    - subtitle: "Test"
-      subhref: "/learn2/"
-    - subtitle: "Testing"
-      subhref: "/learn3/"
+      subhref: "https://www.autismresearchcentre.com/people_bethlehem"
+    - subtitle: "Marcel Falkiewicz"
+      subhref: "https://www.cbs.mpg.de/employees/44747/162350"
+    - subtitle: "Jan Freyberg"
+      subhref: "http://www.janfreyberg.com/"
+    - subtitle: "Owen Parsons"
+      subhref: "https://www.autismresearchcentre.com/people_parsons"
+    - subtitle: "Rezvan Farahibozorg"
+      subhref: "http://www.mrc-cbu.cam.ac.uk/people/rezvan.farahibozorg/"
+    - subtitle: "Charlotte Pretzsch"
+      subhref: "https://kclpure.kcl.ac.uk/portal/en/persons/charlotte-pretzsch(15938ff9-4680-4e21-8b9a-8704905e5566).html"
+    - subtitle: "Bjoern Soergel"
+      subhref: "http://www.ast.cam.ac.uk/people/bjoern.soergel"
+    - subtitle: "Daniel Margulies"
+      subhref: "https://www.cbs.mpg.de/person/margulies/187852"
       
 - title: "About"
   href: "/about.html"
