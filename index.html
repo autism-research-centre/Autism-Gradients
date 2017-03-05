@@ -46,7 +46,7 @@ rm v1.0.0.zip
 
 <div class="blog-index">  
   <p>
-  {% assign post = site.posts.first %}
+  {% assign post = site.categories['updates'].first %}
   {% assign content = post.content %}
   {% include post_detail_title.html %}
     </p>
