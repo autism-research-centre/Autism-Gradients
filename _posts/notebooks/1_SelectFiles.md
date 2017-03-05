@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Put title here"
-subtitle:   "More detail here. I would advise keeping the main title (above) short, as it will show up in the navigation menu"
+title:      "Step 1 - Selecting files"
+subtitle:   "iPython notebook to do some files selection and create a list of selected datasets"
 date:       2017-03-05 12:00:00
 author:     "Richard Bethlehem"
 header-img: "img/home-bg.jpg"
