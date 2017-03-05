@@ -4,7 +4,7 @@ title:      "Project launch"
 subtitle:   "Project rational for the Autism Gradients project"
 date:       2017-03-05 12:00:00
 author:     "Owen Parsons"
-header-img: "img/main-bg.jpg"
+header-img: "img/home-bg.jpg"
 categories: updates
 ---
 
