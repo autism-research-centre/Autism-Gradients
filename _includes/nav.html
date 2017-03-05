@@ -1,0 +1,88 @@
+<!-- Navigation -->
+<!-- <nav class="navbar navbar-default navbar-custom navbar-fixed-top"> -->
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+		
+		  {% assign url_parts = page.url | split: '/' %}
+		
+            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <!-- <li>
+                    <a href="{{ site.baseurl }}/">Home - Edit</a>
+                </li>
+		    
+		    
+		    
+                {% for page in site.pages %}
+		    {% if page.url == '/posts.html' %}
+		    <li><a href="/posts/">Testing 3</a></li>
+		       
+		    
+			{% endif %}
+		    {% if page.title %}
+				{% if page.url != '/404.html' %}
+                <li>
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+				{% endif %}
+		    
+		    {% if url_parts[1] == 'posts' %}
+		    <li><a href="posts">Testing</a></li>
+		       
+		    
+			{% endif %}
+		    
+		    {% if page.title == 'posts' %}
+		    <li><a href="/posts/">Testing 2</a></li>
+		       
+		    
+			{% endif %}
+			    
+                {% endif %}{% endfor %} -->
+		    {% for dale in site.data.nav %}
+
+    <!-- check to see if the data file has a submenu, and if so display it -->
+    {% if dale.subcategories != null %}
+    <li class="dropdown">
+	{% if dale.title == 'Test' %}	    
+    <a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }} - Test5<i class="fa fa-angle-down"></i></a>
+     {% else %}
+	<a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }} - Test4<i class="fa fa-angle-down"></i></a>    
+	{% endif %}    
+	    <ul class="dropdown-menu">
+{% if dale.title == 'Test' %}		    
+    {% for subcategory in dale.subcategories %}
+    <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+    {% endfor %}
+{% else %}		    
+{% for post in site.categories['updates'] %}
+<li><a href="/"> {{ post.title }} </a></li>
+{% endfor %}
+		    {% endif %}  
+    </ul>
+    {% else %}
+
+    <!— display the top level navigation for items that don’t have a submenu -->
+    <li>
+    <a href="{{ site.url }}{{ dale.href }}">{{ dale.title }}</a>
+    {% endif %}
+    </li>
+    {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
