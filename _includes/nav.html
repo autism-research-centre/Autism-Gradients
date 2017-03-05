@@ -74,7 +74,11 @@
 		    
 
  {% for subcategory in dale.subcategories %}
-    <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+	{% if dale.title == 'Contributors' %}	    
+    <li><a href="{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+	{% else %}
+	<li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>	    
+	{% endif %} 	    
     {% endfor %}
 		    
 {% endif %}  
