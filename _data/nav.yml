@@ -2,16 +2,16 @@
   href: ""
 
 - title: "Updates"
-  href: "updates.html"
+  href: "/updates.html"
   dropdown: "Yes"
 
       
 - title: "Notebooks"
-  href: "notebooks.html"
+  href: "/notebooks.html"
   dropdown: "Yes"
       
 - title: "Contributors"
-  href: "contributors.html"  
+  href: "/contributors.html"  
   dropdown: "Yes"
   subcategories:
     - subtitle: "Richard Bethlehem"
@@ -32,4 +32,4 @@
       subhref: "https://www.cbs.mpg.de/person/margulies/187852"
       
 - title: "About"
-  href: "about.html"
+  href: "/about.html"
