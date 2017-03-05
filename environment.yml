@@ -3,6 +3,7 @@ dependencies:
   - python=2.7
   - jupyter
   - scikit-learn
+  - jupyterlab
   - numpy
   - scipy
   - matplotlib
@@ -11,3 +12,4 @@ dependencies:
     - git+git://github.com/janfreyberg/mapalign
     - nibabel
     - nilearn
+    - matlab_kernel
