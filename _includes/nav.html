@@ -63,7 +63,7 @@
 <li><a href="/"> {{ post.title }} </a></li>
 {% endfor %}		    
 		    
-{% elfis dale.title == 'Notebooks' %}
+{% elsif dale.title == 'Notebooks' %}
 		    
 {% for post in site.categories['notebooks'] %}
 <li><a href="/"> {{ post.title }} </a></li>
