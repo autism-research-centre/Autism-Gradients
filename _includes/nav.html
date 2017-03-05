@@ -55,22 +55,28 @@
 
     <!-- check to see if the data file has a submenu, and if so display it -->
     {% if dale.subcategories != null %}
-    <li class="dropdown">
-	{% if dale.title == 'Test' %}	    
-    <a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }} - Test5<i class="fa fa-angle-down"></i></a>
-     {% else %}
-	<a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }} - Test4<i class="fa fa-angle-down"></i></a>    
-	{% endif %}    
+    <li class="dropdown"> 
 	    <ul class="dropdown-menu">
-{% if dale.title == 'Test' %}		    
-    {% for subcategory in dale.subcategories %}
-    <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
-    {% endfor %}
-{% else %}		    
+{% if dale.title == 'Updates' %}
+		    
 {% for post in site.categories['updates'] %}
 <li><a href="/"> {{ post.title }} </a></li>
+{% endfor %}		    
+		    
+{% elfis dale.title == 'Notebooks' %}
+		    
+{% for post in site.categories['notebooks'] %}
+<li><a href="/"> {{ post.title }} </a></li>
 {% endfor %}
-		    {% endif %}  
+		    
+{% else %}
+		    
+
+ {% for subcategory in dale.subcategories %}
+    <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+    {% endfor %}
+		    
+{% endif %}  
     </ul>
     {% else %}
 
