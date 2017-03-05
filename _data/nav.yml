@@ -12,6 +12,7 @@
       
 - title: "Contributors"
   href: "/contributors.html"  
+  dropdown: "Yes"
   subcategories:
     - subtitle: "Richard Bethlehem"
       subhref: "/learn1/"
