@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Put title here"
+subtitle:   "More detail here. I would advise keeping the main title (above) short, as it will show up in the navigation menu"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 Step 1: Selecting subjects based on
 - Missing data
