@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 email: rb643@cam.ac.uk
 copyright_name: rb643
 description: "Autism Gradients Project"
-baseurl: ""
+baseurl: "website"
 url: "https://autism-research-centre.github.io/Autism-Gradients/website/"
 production_url : https://autism-research-centre.github.io/Autism-Gradients/website/
 github_username:  autism-research-centre
