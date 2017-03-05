@@ -67,7 +67,7 @@
 		    
 {% elsif dale.title == 'Notebooks' %}
 		    
-{% for post in site.categories['notebooks'] %}
+{% for post in site.categories['notebooks'] reversed %}
 <li><a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></li>
 {% endfor %}
 		    
