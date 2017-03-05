@@ -1,3 +1,4 @@
-data/
+data/Outputs
+data/Output
 cluster_roi/
 \.ipynb_checkpoints/
