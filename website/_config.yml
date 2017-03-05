@@ -1,0 +1,28 @@
+# Site settings
+title: Autism Gradients
+header-img: img/home-bg.jpg
+email: rb643@cam.ac.uk
+copyright_name: rb643
+description: "Autism Gradients Project"
+baseurl: "Autism-Gradients/website"
+url: "https://autism-research-centre.github.io/Autism-Gradients/website/"
+production_url : https://autism-research-centre.github.io/Autism-Gradients/website/
+github_username:  autism-research-centre
+email_username:  rb643@cam.ac.uk
+menu-count: 4
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title
+#permalink: pretty
+paginate: 3
+paginate_path: posts/page:num
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","Gradients.ipynb"]
+excerpt_separator: <!--more-->
+
+gems: [jekyll-paginate, jekyll-feed]
