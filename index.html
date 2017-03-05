@@ -20,47 +20,6 @@ In Autism research there are numerous theories regarding alterations in function
 
 Thus, in the present project we would like to investigate these cortical hierarchy by looking at the steepness of the connectivity gradient. 
 
-#### Get set up
-
-Make sure you have anaconda or miniconda installed. This provides you with a good way to manage your python repositories, and allows you to simply install all dependencies for this project by using the provided environment.yml file.
-
-Find it here:
-
-https://conda.io/miniconda.html
-
-You should also have git installed, since some packages used in this project are only available from github.
-
-If you have both git and miniconda or anaconda installed, start by cloning this repository:
-
-```
-git clone https://github.com/rb643/Autism-Gradients
-```
-
-To manage all the required packages, we’ll create a new conda environment. These environments simply clone your root environment (so they will have everything you normally have installed) and then install packages listed in the environment file only for that environment. If you stop working on this project, you’ll be able to simply delete the environment, and all the packages will be uninstalled.
-<ol>
-<li>Open a terminal or a cmd prompt.</li>
-<li>Change directory (cd) to the repository folder. If you ran git clone … (above) in your home folder, the repository should be reachable by typing cd ~/Autism-Gradients on OSX or Linux.</li>
-<li>Create a conda environment from the environment.yml file using the following command: 
-  ```
-  conda env create -n rbbrainhack -f environment.yml.
-  ```
-It will ask you if you want to go ahead and install all the packages - simply press enter.</li>
-<li>Then activate this environment: 
-  ```
-  source activate rbbrainhack
-  ```
-  on Linux/OSX, 
-  ```
-  activate rbbrainhack
-  ``` 
-  on Windows.
-Whenever you stop working on this, you can type source deactivate rbbrainhack to return to your normal python installation, or simply close your terminal and open a new one.</li>
-<li>Type: 
-  ```jupiter notebook``` 
-  This will open a browser window that displays the content of your home directory. Click on the files ending in .ipynb to open them and run the code!</li>
-</ol>
-  
-  If you have any issues with the above, simply open an issue on this github repository!
 
 {% endcapture %}{{ main_content | markdownify }}
 
