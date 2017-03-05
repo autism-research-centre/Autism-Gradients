@@ -3,6 +3,7 @@ dependencies:
   - python=2.7
   - jupyter
   - scikit-learn
+  - jupyterlab
   - numpy
   - scipy
   - matplotlib
