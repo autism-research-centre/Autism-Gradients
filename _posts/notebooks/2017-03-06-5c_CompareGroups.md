@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 5c - Comparing gradient slopes"
+subtitle:   "iPython notebook to compare gradient slopes created in 5a"
+date:       2017-03-05 12:00:00
+author:     "Richard Bethlehem"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## Step 5C - Comparing gradient slopes
 
