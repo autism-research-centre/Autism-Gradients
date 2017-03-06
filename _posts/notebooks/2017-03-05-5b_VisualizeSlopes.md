@@ -67,7 +67,7 @@ grdnt_slope.shape
 
 
 
-![Figure1](/img/post_imgs/2017-03-05-output_3_1.png)
+![Figure1](/Autism-Gradients/img/post_imgs/2017-03-05-output_3_1.png)
 
 
 
