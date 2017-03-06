@@ -71,24 +71,6 @@ grdnt_slope.shape
 
 
 
-![Figure2](/img/post_imgs/2017-03-05-output_3_2.png)
-
-
-
-![Figure3](/img/post_imgs/2017-03-05-output_3_3.png)
-
-
-
-![Figure4](/img/post_imgs/2017-03-05-output_3_4.png)
-
-
-
-![Figure5](/img/post_imgs/2017-03-05-output_3_5.png)
-
-
-
-
-
     (5, 10)
 
 
