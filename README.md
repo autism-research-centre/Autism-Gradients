@@ -34,6 +34,9 @@ To manage all the required packages, we’ll create a new conda environment. The
     - It will ask you if you want to go ahead and install all the packages - simply press `enter`.
 4. Then activate this environment: `source activate rbbrainhack` on Linux/OSX, `activate rbbrainhack` on Windows.
     - Whenever you stop working on this, you can type `source deactivate rbbrainhack` to return to your normal python installation, or simply close your terminal and open a new one.
-5. Type `jupiter notebook`. This will open a browser window that displays the content of your home directory. Click on the files ending in `.ipynb` to open them and run the code!
+5. Type `jupyter notebook`. This will open a browser window that displays the content of your home directory. Click on the files ending in `.ipynb` to open them and run the code!
+    - If you want to run the matlab-based notebooks, you also need to install the MATLAB python engine. Do this by:
+        - Follow the setup [instructions on the matlab docs](https://uk.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html). This makes matlab commands available to python.
+        - Type `python -m matlab_kernel install` at the command line. This registers the matlab kernel with jupyter.
 
 __If you have any issues with the above, simply open an issue on this github repository!__
