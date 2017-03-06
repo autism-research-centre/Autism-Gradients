@@ -125,7 +125,7 @@ i = interact(rebuild_nii_plot_new,
             )
 ```
 
-![example](Autism-Gradients/img/post_imgs/output_6_0.png)
+![example](/Autism-Gradients/img/post_imgs/output_6_0.png)
 
 
 ```python
