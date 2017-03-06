@@ -1,4 +1,6 @@
 name: rbbrainhack
+channels:
+  - conda-forge
 dependencies:
   - python=2.7
   - jupyter
@@ -7,6 +9,7 @@ dependencies:
   - numpy
   - scipy
   - matplotlib
+  - pandas
   - pip:
     - git+git://github.com/janfreyberg/pySTATIS
     - git+git://github.com/janfreyberg/mapalign
