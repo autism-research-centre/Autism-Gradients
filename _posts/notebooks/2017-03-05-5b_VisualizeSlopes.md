@@ -67,23 +67,23 @@ grdnt_slope.shape
 
 
 
-![png](https://github.com/autism-research-centre/Autism-Gradients/blob/master/img/post_imgs/2017-03-05-output_3_1.png)
+![Figure1](/img/post_imgs/2017-03-05-output_3_1.png)
 
 
 
-![png](https://github.com/autism-research-centre/Autism-Gradients/blob/master/img/post_imgs/2017-03-05-output_3_2.png)
+![Figure2](/img/post_imgs/2017-03-05-output_3_2.png)
 
 
 
-![png](https://github.com/autism-research-centre/Autism-Gradients/blob/master/img/post_imgs/2017-03-05-output_3_3.png)
+![Figure3](/img/post_imgs/2017-03-05-output_3_3.png)
 
 
 
-![png](https://github.com/autism-research-centre/Autism-Gradients/blob/master/img/post_imgs/2017-03-05-output_3_4.png)
+![Figure4](/img/post_imgs/2017-03-05-output_3_4.png)
 
 
 
-![png](https://github.com/autism-research-centre/Autism-Gradients/blob/master/img/post_imgs/2017-03-05-output_3_5.png)
+![Figure5](/img/post_imgs/2017-03-05-output_3_5.png)
 
 
 
