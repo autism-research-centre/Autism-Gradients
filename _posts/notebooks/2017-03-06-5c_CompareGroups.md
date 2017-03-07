@@ -253,5 +253,5 @@ fig.subplots_adjust(hspace=0.4)
 ```
 
 
-![png](https://github.com/autism-research-centre/Autism-Gradients/blob/master/img/post_imgs/output_3_0.png)
+![png](Autism-Gradients/img/post_imgs/output_3_0.png)
 
