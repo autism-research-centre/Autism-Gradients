@@ -127,7 +127,7 @@ end
 ```
 
 
-![png](output_10_0.png)
+![Figure1](/Autism-Gradients/img/post_imgs/2017-03-05-output_10_0.png)
 
 
 We can also do this for each bin of the gradient. The bin boundaries (in percentiles) can be given as a last argument to the gradient_goodness function. Note that this will roughly take 10x as long as the previous steps.
