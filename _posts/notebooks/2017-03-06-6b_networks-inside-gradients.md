@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 6b - Calculating z-scores inside gradient bins"
+subtitle:   "iPython notebook to calculate average neurosynth z-score inside gradient percentile bins"
+date:       2017-03-05 12:00:00
+author:     "Jan Freyberg"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## This file works out the average z-score inside a gradient percentile area
 
@@ -20,6 +29,7 @@ import pandas as pd
 
 import os
 import os.path
+
 
 # The following are a progress bar, these are not strictly necessary:
 from ipywidgets import FloatProgress
