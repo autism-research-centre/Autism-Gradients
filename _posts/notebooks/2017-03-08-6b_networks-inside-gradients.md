@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "Step 6b - Calculate binned gradient-network overlap"
+subtitle:   "iPython notebook to compute goodness of fit with known network for binned gradients"
+date:       2017-03-08 12:00:00
+author:     "Jan Freyberg"
+header-img: "img/home-bg.jpg"
+categories: notebooks
+---
 
 ## 6b Calculate binned gradient-network overlap
 
@@ -184,7 +193,7 @@ plt.savefig('./figures/z-scores-inside-gradient-bins.png')
 ```
 
 
-![png](output_14_0.png)
+![Figure](/Autism-Gradients/img/post_imgs/2017-03-05-output_14_0.png)
 
 
 
