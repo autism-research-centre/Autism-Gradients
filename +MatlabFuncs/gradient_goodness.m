@@ -1,5 +1,5 @@
 %% compare gradients inside a mask to outside the mask
-function [ratio, inside, outside, correlate] = gradient_goodness(gradfile, component, mask)
+function [ratio] = gradient_goodness(gradfile, component, mask, bin)
 %% comp         -       component to compare
 %% comp2compare -       directory of components to compare against
 %% mask         -       brainmask
@@ -10,18 +10,29 @@ function [ratio, inside, outside, correlate] = gradient_goodness(gradfile, compo
 bgmask = logical(read_avw(mask));
 
 [compmap] = logical(read_avw(component));
+compmap = reshape(compmap, [numel(compmap), 1]);
 
-compcontinuous = read_avw(component);
+% compcontinuous = read_avw(component);
 
 [gradmap] = read_avw(gradfile);
+gradmap(~bgmask) = NaN;
+gradmap = reshape(gradmap, [numel(gradmap), 1]);
 
-inside = abs(nanmean(reshape(gradmap(bgmask & compmap), numel(gradmap(bgmask & compmap)), 1))/100);
-outside = abs(nanmean(reshape(gradmap(bgmask & ~compmap), numel(gradmap(bgmask & ~compmap)), 1))/100);
+% Loop over bins if required
+if ~isempty(bin) && bin
+    for ibin = 1:10
+        boundaries = prctile(gradmap, [ibin-1, ibin]*10);
+        inside = abs(nanmean(gradmap(compmap & gradmap>min(boundaries) & gradmap<max(boundaries))));
+        outside = abs(nanmean(gradmap(~compmap & gradmap>min(boundaries) & gradmap<max(boundaries))));
+        ratio(ibin) = inside / outside;
+    end
+else
+    inside = abs(nanmean(gradmap(compmap)));
+    outside = abs(nanmean(gradmap(~compmap)));
+    ratio = inside / outside;
+end
 
 
-% Calculate the ratio between the two
-ratio = inside / outside;
-
-correlate = corr(gradmap(bgmask & compmap), compcontinuous(bgmask & compmap));
+% correlate = corr(gradmap(bgmask & compmap), compcontinuous(bgmask & compmap));
 
 end
