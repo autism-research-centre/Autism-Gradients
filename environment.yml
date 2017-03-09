@@ -11,8 +11,8 @@ dependencies:
   - matplotlib
   - pandas
   - pip:
-    - git+git://github.com/janfreyberg/pySTATIS
-    - git+git://github.com/janfreyberg/mapalign
+    - git+git://github.com/mfalkiewicz/pySTATIS
+    - git+git://github.com/satra/mapalign
     - nibabel
     - nilearn
     - matlab_kernel
