@@ -24,7 +24,7 @@ You should also have `git` installed, since some packages used in this project a
 
 If you have both git and miniconda or anaconda installed, start by cloning this repository:
 
-`git clone https://github.com/rb643/Autism-Gradients`
+`git clone https://github.com/autism-research-centre/Autism-Gradients`
 
 To manage all the required packages, we’ll create a new conda environment. These environments simply clone your root environment (so they will have everything you normally have installed) and then install packages listed in the environment file _only for that environment_. If you stop working on this project, you’ll be able to simply delete the environment, and all the packages will be uninstalled.
 
